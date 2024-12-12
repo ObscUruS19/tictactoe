@@ -11,4 +11,12 @@ public class Main {
 
         System.out.println("Bonjour " + joueur1 + "et " + joueur2 + ", bon jeu a vous ;)");
     }
+    public static void initialiserPlateau(char[][] plateau) {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                plateau[i][j] = ' ';
+            }
+        }
+    }
+
 }
