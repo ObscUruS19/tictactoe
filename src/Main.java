@@ -55,7 +55,12 @@ public class Main {
             System.out.println("Voulez-vous rejouer ? (oui/non)");
             String reponse = scanner.next();
 
-            if (!reponse.equalsIgnoreCase("oui")) {
+            if (reponse.equalsIgnoreCase("oui")) {
+                // Échange des noms des joueurs pour changer l'ordre
+                String temp = joueur1;
+                joueur1 = joueur2;
+                joueur2 = temp;
+            } else {
                 rejouer = false;
             }
         }
